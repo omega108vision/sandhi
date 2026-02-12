@@ -1,0 +1,1771 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тонке Бачення - Курс розвитку інтуїції | Школа Сандхі-Хілінг</title>
+    <meta name="description" content="Розвинь тонке бачення та інтуїцію. Авторський курс від Дар'ї Смірнової. 3 рівні результату: для себе, для близьких, для доходу. Старт 19.03">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Cormorant', serif;
+        }
+        
+        .gradient-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .card-hover {
+            transition: all 0.3s ease;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.2);
+        }
+        
+        .timeline-dot {
+            width: 20px;
+            height: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 50%;
+            position: absolute;
+            left: -10px;
+            top: 0;
+            border: 4px solid white;
+            box-shadow: 0 0 0 2px #667eea;
+        }
+        
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease;
+        }
+        
+        .accordion-content.active {
+            max-height: 2000px;
+        }
+        
+        .parallax {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-20px); }
+        }
+        
+        .pulse-glow {
+            animation: pulse-glow 2s ease-in-out infinite;
+        }
+        
+        @keyframes pulse-glow {
+            0%, 100% { box-shadow: 0 0 20px rgba(102, 126, 234, 0.5); }
+            50% { box-shadow: 0 0 40px rgba(102, 126, 234, 0.8); }
+        }
+        
+        .scroll-fade {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s ease;
+        }
+        
+        .scroll-fade.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+        
+        .sticky-cta {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 1000;
+            display: none;
+        }
+        
+        .sticky-cta.show {
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); }
+            to { transform: translateX(0); }
+        }
+        
+        .schedule-item {
+            transition: all 0.3s ease;
+        }
+        
+        .schedule-item:hover {
+            transform: translateX(10px);
+            background: linear-gradient(135deg, rgba(102, 126, 234, 0.1) 0%, rgba(118, 75, 162, 0.1) 100%);
+        }
+        
+        @media (max-width: 768px) {
+            .sticky-cta {
+                bottom: 10px;
+                right: 10px;
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+
+    <!-- Header / Navigation -->
+    <nav class="bg-white shadow-md fixed w-full top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center">
+                        <i class="fas fa-om text-white text-xl"></i>
+                    </div>
+                    <div>
+                        <div class="font-bold text-lg gradient-text">Сандхі-Хілінг</div>
+                        <div class="text-xs text-gray-500">Школа енергопрактики</div>
+                    </div>
+                </div>
+                <div class="hidden md:flex space-x-6">
+                    <a href="#about" class="text-gray-700 hover:text-purple-600 transition">Про курс</a>
+                    <a href="#schedule" class="text-gray-700 hover:text-purple-600 transition">Розклад</a>
+                    <a href="#program" class="text-gray-700 hover:text-purple-600 transition">Програма</a>
+                    <a href="#reviews" class="text-gray-700 hover:text-purple-600 transition">Відгуки</a>
+                    <a href="#pricing" class="text-gray-700 hover:text-purple-600 transition">Тарифи</a>
+                </div>
+                <a href="#pricing" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-2 rounded-full hover:shadow-lg transition">
+                    Записатись
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="gradient-bg text-white pt-32 pb-20 relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div class="scroll-fade">
+                    <div class="inline-block bg-white bg-opacity-20 backdrop-blur-sm px-4 py-2 rounded-full mb-6">
+                        <span class="text-sm font-medium">🔥 Старт навчання 19 березня • Обмежена пропозиція</span>
+                    </div>
+                    
+                    <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+                        Тонке Бачення
+                    </h1>
+                    
+                    <p class="text-xl md:text-2xl mb-8 text-purple-100 leading-relaxed">
+                        Розвинь інтуїцію та навчись бачити те, що приховано від інших. Три рівні трансформації: для себе, для близьких, для доходу.
+                    </p>
+                    
+                    <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-6 mb-8">
+                        <div class="flex items-center gap-3 mb-3">
+                            <i class="fas fa-calendar-alt text-3xl"></i>
+                            <div>
+                                <div class="font-bold text-lg">Старт навчання</div>
+                                <div class="text-2xl font-bold">19 березня 2026</div>
+                            </div>
+                        </div>
+                        <div class="text-sm text-purple-100">
+                            Тривалість: 8 тижнів інтенсивного навчання + бонусні модулі
+                        </div>
+                    </div>
+                    
+                    <div class="flex flex-col sm:flex-row gap-4 mb-8">
+                        <a href="#pricing" class="bg-white text-purple-600 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-2xl transition transform hover:scale-105 text-center">
+                            Отримати доступ зі знижкою
+                        </a>
+                        <a href="#schedule" class="border-2 border-white text-white px-8 py-4 rounded-full font-semibold text-lg hover:bg-white hover:text-purple-600 transition text-center">
+                            Переглянути розклад
+                        </a>
+                    </div>
+                    
+                    <div class="flex items-center gap-8 text-sm">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-users text-2xl"></i>
+                            <div>
+                                <div class="font-bold text-lg">1000+</div>
+                                <div class="text-purple-100">учнів</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-clock text-2xl"></i>
+                            <div>
+                                <div class="font-bold text-lg">4 роки</div>
+                                <div class="text-purple-100">школі</div>
+                            </div>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-star text-2xl"></i>
+                            <div>
+                                <div class="font-bold text-lg">20+ років</div>
+                                <div class="text-purple-100">досвіду</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="relative floating hidden md:block">
+                    <div class="w-full h-96 bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl flex items-center justify-center">
+                        <div class="text-center">
+                            <i class="fas fa-eye text-9xl text-white opacity-50 mb-4"></i>
+                            <p class="text-xl text-white">Фото Дар'ї Смірнової</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Schedule Section - NEW -->
+    <section id="schedule" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <div class="inline-block bg-purple-100 text-purple-800 px-6 py-3 rounded-full mb-6 font-bold">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Старт 19 березня 2026
+                </div>
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Детальний розклад навчання</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Структуроване навчання протягом 8 тижнів з чіткими етапами та результатами
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                
+                <!-- Phase 1: Preparation -->
+                <div class="mb-16 scroll-fade">
+                    <div class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-6 rounded-t-3xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-seedling text-3xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-purple-200">Етап 1: Підготовка</div>
+                                <h3 class="text-3xl font-bold">19.03 - 27.03</h3>
+                                <p class="text-purple-100">Крія-йога та підготовка до роботи у тонкому просторі</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-b-3xl">
+                        <div class="space-y-4">
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    19.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Додавання в групу. Знайомство</div>
+                                    <p class="text-gray-600">Старт навчання, знайомство з учнями та платформою</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    20.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Альона Хорошилова. Крія-йога</div>
+                                    <p class="text-gray-600">Урок в записі. Підготовка тіла до енергетичних практик</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    21.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Альона Хорошилова. Крія-йога</div>
+                                    <p class="text-gray-600">Урок в записі. Продовження практик</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    22.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Практика підсилення біоенергетичного поля</div>
+                                    <p class="text-gray-600">Зміцнення аури та енергетичного захисту</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    23.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Практика очищення від впливу тонких енергій</div>
+                                    <p class="text-gray-600">Навчимося звільнятися від негативних впливів</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    24.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Практика очищення після роботи у тонкому просторі</div>
+                                    <p class="text-gray-600">Важлива техніка для взаємодії з енергією людей</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    25.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Практика захисту себе та свого простору</div>
+                                    <p class="text-gray-600">Створення енергетичного щита</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    26.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Заземлення. Медитація наповнення енергією</div>
+                                    <p class="text-gray-600">Підключення до земної енергії</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold">
+                                    27.03
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Практика зняття болю (головного і не тільки)</div>
+                                    <p class="text-gray-600">Перші практичні навички зцілення</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-gradient-to-r from-yellow-400 to-orange-500 p-6 rounded-xl flex items-start gap-4 pulse-glow">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-fire text-3xl text-orange-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-xl mb-2 text-gray-800">27.03 • П'ятниця • 20:00 за Києвом</div>
+                                    <div class="text-2xl font-bold text-gray-800 mb-2">🐍 Групова онлайн Активація Кундаліні</div>
+                                    <p class="text-gray-700">Потужна трансформаційна практика, яка відкриває новий рівень енергії</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 2: Main Learning -->
+                <div class="mb-16 scroll-fade">
+                    <div class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white p-6 rounded-t-3xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-graduation-cap text-3xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-purple-200">Етап 2: Основне навчання</div>
+                                <h3 class="text-3xl font-bold">28.03 - 9.05</h3>
+                                <p class="text-purple-100">Онлайн заняття у Zoom • Четвер і Субота о 11:00 за Києвом • 2-3 години</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-b-3xl">
+                        <div class="space-y-4">
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    28.03<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Поняття Тонкого Простору. Канали зчитування</div>
+                                    <p class="text-gray-600">Практика відкриття каналів сприйняття</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    2.04<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Канали зчитування: тілесний, ментальний, візуальний</div>
+                                    <p class="text-gray-600">Медитація розширення каналів</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    4.04<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Робота з чакрами. Перші три чакри</div>
+                                    <p class="text-gray-600">Практика в парах. Розвиток навичок діагностики</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    9.04<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Робота з чакрами. Групова практика</div>
+                                    <p class="text-gray-600">Поглиблення навичок роботи з енергетичними центрами</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    11.04<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Анатомія тонких тіл</div>
+                                    <p class="text-gray-600">Структура енергетичної системи людини</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    16.04<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Проєктор реальності. Програми, установки, переконання</div>
+                                    <p class="text-gray-600">Як наші думки створюють реальність</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    18.04<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Проєктор реальності. Урок Душі. Коренева причина</div>
+                                    <p class="text-gray-600">Пошук глибинних причин подій у житті</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    23.04<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Патогенна енергія</div>
+                                    <p class="text-gray-600">Робота з негативними енергетичними впливами</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    25.04<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Родова енергія. Пропрацювання внутрішньої дитини</div>
+                                    <p class="text-gray-600">Зцілення дитячих травм та родових патернів</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    30.04<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Родова енергія. Прийняття в рід, дари роду</div>
+                                    <p class="text-gray-600">Підключення до сили роду та отримання підтримки</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    2.05<br/>ЧТ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Робота з тілом, з хворобами</div>
+                                    <p class="text-gray-600">Практичні техніки енергетичного зцілення</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-white p-4 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-sm text-center">
+                                    7.05<br/>СБ
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-lg mb-1">Робота з простором, хранителями простору</div>
+                                    <p class="text-gray-600">Очищення та налаштування енергії місця</p>
+                                </div>
+                            </div>
+                            
+                            <div class="schedule-item bg-gradient-to-r from-green-400 to-emerald-500 p-6 rounded-xl flex items-start gap-4">
+                                <div class="w-16 h-16 bg-white rounded-xl flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-trophy text-3xl text-green-600"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="font-bold text-xl mb-2 text-gray-800">9.05 • Субота • 11:00 за Києвом</div>
+                                    <div class="text-2xl font-bold text-gray-800 mb-2">🎓 Випускний</div>
+                                    <p class="text-gray-700">Знайомство зі своєю світловою сім'єю та наставниками</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Phase 3: Bonus Modules -->
+                <div class="scroll-fade">
+                    <div class="bg-gradient-to-r from-purple-600 to-pink-600 text-white p-6 rounded-t-3xl">
+                        <div class="flex items-center gap-4">
+                            <div class="w-16 h-16 bg-white bg-opacity-20 rounded-2xl flex items-center justify-center">
+                                <i class="fas fa-gift text-3xl"></i>
+                            </div>
+                            <div>
+                                <div class="text-sm text-purple-200">Етап 3: Бонусні модулі</div>
+                                <h3 class="text-3xl font-bold">З 10.05</h3>
+                                <p class="text-purple-100">Доступ до уроків у зручний час • Додаткові знання та практики</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-b-3xl">
+                        <div class="grid md:grid-cols-2 gap-6">
+                            <div class="bg-white p-6 rounded-2xl shadow-md">
+                                <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center mb-4">
+                                    <i class="fas fa-shapes text-purple-600 text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">Сакральна Геометрія та Основи Нейрографіки</h4>
+                                <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Двотижневий курс</span>
+                                </div>
+                                <p class="text-gray-700">Уроки в записі, доступні для проходження у зручний для вас час. Підсилення візуалізації та роботи з енергією через геометричні форми.</p>
+                            </div>
+                            
+                            <div class="bg-white p-6 rounded-2xl shadow-md">
+                                <div class="w-12 h-12 bg-pink-100 rounded-xl flex items-center justify-center mb-4">
+                                    <i class="fas fa-heart text-pink-600 text-2xl"></i>
+                                </div>
+                                <h4 class="text-xl font-bold mb-3">ЕОТ (Емоційно-Образна Терапія)</h4>
+                                <div class="flex items-center gap-2 text-sm text-gray-600 mb-3">
+                                    <i class="fas fa-clock"></i>
+                                    <span>Цикл практичних лекцій</span>
+                                </div>
+                                <p class="text-gray-700">Уроки в записі. Глибока робота з емоціями та їх трансформація. Потужний інструмент для роботи з собою та клієнтами.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-6 bg-gradient-to-r from-purple-100 to-pink-100 p-6 rounded-2xl">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-info-circle text-purple-600 text-2xl mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-lg mb-2">Повна свобода навчання</div>
+                                    <p class="text-gray-700">Бонусні модулі доступні в записі — ви можете проходити їх у своєму темпі без прив'язки до дат та часу. Це додаткові інструменти для підсилення вашої практики.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Three Levels of Results -->
+    <section id="about" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Три рівні твоєї трансформації</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Цей курс — не просто навчання. Це шлях, який змінить твоє життя на всіх рівнях.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-3xl card-hover scroll-fade">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-heart text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Рівень 1: Для себе</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Розвинеш тонке бачення та інтуїцію</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Навчишся відчувати енергії та працювати з ними</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Знайдеш свою місію та сенс</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Покращиш власне життя на всіх рівнях</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-8 rounded-3xl card-hover scroll-fade" style="animation-delay: 0.2s">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-users text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Рівень 2: Для близьких</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Зможеш допомагати рідним, друзям, родині</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Станеш провідником для тих, кого любиш</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Отримаєш інструменти для підтримки інших</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Створиш поле любові та турботи навколо себе</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-3xl card-hover scroll-fade" style="animation-delay: 0.4s">
+                    <div class="w-16 h-16 gradient-bg rounded-2xl flex items-center justify-center mb-6">
+                        <i class="fas fa-dollar-sign text-3xl text-white"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold mb-4">Рівень 3: Для доходу</h3>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Зможеш перетворити це на професію</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Підсилиш себе як спеціаліста (психолог, коуч, терапевт)</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Отримаєш готову систему заробітку від Дар'ї</span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Приєднаєшся до спільноти практикуючих учнів</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Problem / Pain Points -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-4xl mx-auto">
+                <div class="text-center mb-16 scroll-fade">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Це про тебе?</h2>
+                    <p class="text-xl text-gray-600">
+                        Впізнай себе в цих відчуттях
+                    </p>
+                </div>
+                
+                <div class="space-y-6">
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-purple-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-lightbulb text-purple-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Ти вже це відчуваєш</h3>
+                                <p class="text-gray-600">Бували моменти коли інтуїція підказувала — і ти знав/знала що робити. Відчуття що "щось є", але не розумієш як цим керувати. Іноді бачиш речі наперед, але не можеш це пояснити. Хочеш розвинути це, але не знаєш з чого почати.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-indigo-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-eye text-indigo-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Ти бачиш це в інших</h3>
+                                <p class="text-gray-600">Люди які розвинули інтуїцію — успішні, у них все складається. Вони приймають правильні рішення наче "знають" щось. Їхнє життя тече легше, вони на своєму місці.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-times-circle text-red-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">А поки інтуїція не розвинена</h3>
+                                <p class="text-gray-600">Життя не приносить повного задоволення. Немає відчуття сенсу та місії. Відчуття що живеш не на повну, щось важливе проходить повз.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-500 to-indigo-600 p-6 rounded-2xl shadow-xl text-white scroll-fade">
+                        <div class="flex items-start gap-4">
+                            <div class="w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-star text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold mb-2">Що змінюється коли розвиваєш тонке бачення</h3>
+                                <p>Ти стаєш провідником — для себе та інших. Знаходиш свою місію та сенс. Твоє власне життя покращується — як природний наслідок. Відчуваєш повноту життя та свою силу.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daria's Story -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Історія Дар'ї Смірнової</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Від дитячого дару до школи, яка змінює життя тисяч людей
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="relative border-l-4 border-purple-200 pl-8 space-y-12">
+                    
+                    <div class="relative scroll-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-child text-purple-600 text-2xl"></i>
+                                <h3 class="text-2xl font-bold">Дар з дитинства</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Перший досвід взаємодії з енергіями у 5 років. З дитинства відчувала те, що інші не бачили. Це був природний дар, який проявлявся спонтанно та дивував оточуючих.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative scroll-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-book-open text-indigo-600 text-2xl"></i>
+                                <h3 class="text-2xl font-bold">Глибоке вивчення</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Понад 20 років вивчення ведичних писань. Навчалась в Індії та жила там, осягаючи знання від носіїв древньої традиції. Вивчала не з книг, а через живу передачу знань від учителів до учня.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative scroll-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-road text-pink-600 text-2xl"></i>
+                                <h3 class="text-2xl font-bold">Тиск оточення та повернення</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Під впливом сім'ї та суспільства на якийсь час відійшла від цього шляху, намагалась жити "нормальним" життям. Але кілька років тому зрозуміла, що це її справжній шлях, і повернулась до практик з новою силою.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative scroll-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-users text-blue-600 text-2xl"></i>
+                                <h3 class="text-2xl font-bold">Перші клієнти та черга</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Почала допомагати друзям та знайомим. Результати були настільки сильними, що почалось "сарафанне радіо". Утворилась така черга, що фізично не встигала допомогти всім. Зрозуміла що потрібно масштабуватись.
+                            </p>
+                        </div>
+                    </div>
+                    
+                    <div class="relative scroll-fade">
+                        <div class="timeline-dot"></div>
+                        <div class="bg-white p-6 rounded-2xl shadow-md">
+                            <div class="flex items-center gap-3 mb-3">
+                                <i class="fas fa-school text-purple-600 text-2xl"></i>
+                                <h3 class="text-2xl font-bold">Народження школи "Сандхі-Хілінг"</h3>
+                            </div>
+                            <p class="text-gray-700">
+                                Прийшло усвідомлення: потрібно не тільки допомагати самій, а й навчати інших. Заснувала школу енергопрактики 4 роки тому, розробила авторську методику навчання. Сьогодні тисячі учнів пройшли навчання, багато з них зробили це своєю професією або підсилили свою поточну спеціальність.
+                            </p>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <div class="mt-12 text-center scroll-fade">
+                    <div class="inline-block bg-gradient-to-r from-purple-500 to-indigo-600 text-white px-8 py-4 rounded-2xl">
+                        <p class="text-lg font-medium mb-2">Місія Дар'ї:</p>
+                        <p class="text-xl font-bold">
+                            Щоб кожна людина відчула можливість самостійно зцілювати себе фізично, емоційно та психологічно. Щоб кожна людина мала стабільну опору на себе і була вільна жити це життя, а не проживати.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About School -->
+    <section class="py-20 gradient-bg text-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="text-center mb-12 scroll-fade">
+                    <h2 class="text-4xl md:text-5xl font-bold mb-4">Школа "Сандхі-Хілінг"</h2>
+                    <p class="text-xl text-purple-100">
+                        4 роки змінюємо життя людей через енергетичні практики
+                    </p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8">
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl scroll-fade">
+                        <i class="fas fa-globe text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Міжнародна спільнота</h3>
+                        <p class="text-purple-100">Тисячі учнів з різних країн світу. Українці, росіяни, європейці, американці — ми об'єднані одним прагненням до розвитку.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl scroll-fade">
+                        <i class="fas fa-certificate text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Авторська методика</h3>
+                        <p class="text-purple-100">Унікальна система навчання, розроблена Дар'єю на основі 20+ років особистого досвіду та перевірена на тисячах учнів.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl scroll-fade">
+                        <i class="fas fa-hands-helping text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Практичний підхід</h3>
+                        <p class="text-purple-100">Не тільки теорія, а реальні навички, які ти зможеш застосовувати вже під час навчання. Результат відчуваєш на собі з перших днів.</p>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-10 backdrop-blur-sm p-8 rounded-2xl scroll-fade">
+                        <i class="fas fa-heart text-5xl mb-4"></i>
+                        <h3 class="text-2xl font-bold mb-3">Підтримка та спільнота</h3>
+                        <p class="text-purple-100">Ти не залишаєшся наодинці після навчання. Спільнота однодумців, підтримка від Дар'ї та команди, обмін досвідом.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Program Summary -->
+    <section id="program" class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Що ти отримаєш у курсі</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Комплексна програма від підготовки до професійного рівня
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                
+                <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">1</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Підготовка тіла та енергетики (9 днів)</h3>
+                            <p class="text-gray-700 mb-4">Крія-йога від Альони Хорошилової, базові практики роботи з енергією, підготовка до Активації Кундаліні. Ти навчишся відчувати енергії та працювати з ними свідомо.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">Крія-йога</span>
+                                <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-sm">Очищення</span>
+                                <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-sm">Захист</span>
+                                <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">Активація</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-indigo-50 to-purple-50 p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">2</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Основне навчання у Zoom (12 живих уроків)</h3>
+                            <p class="text-gray-700 mb-4">Двічі на тиждень живі заняття по 2-3 години: тонкий простір, чакри, канали зчитування, робота з тілом, родовою енергією, хворобами. Практики в парах та групах.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">Онлайн Zoom</span>
+                                <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-sm">Практика</span>
+                                <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-sm">Групова робота</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-start gap-4">
+                        <div class="w-12 h-12 gradient-bg rounded-xl flex items-center justify-center flex-shrink-0 text-white font-bold text-xl">3</div>
+                        <div class="flex-1">
+                            <h3 class="text-2xl font-bold mb-2">Бонусні модулі (додатковий доступ)</h3>
+                            <p class="text-gray-700 mb-4">Сакральна Геометрія, Нейрографіка та ЕОТ (емоційно-образна терапія). Уроки в записі для проходження у зручний час. Підсилення візуалізації та роботи з емоціями.</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="bg-purple-200 text-purple-800 px-3 py-1 rounded-full text-sm">У записі</span>
+                                <span class="bg-indigo-200 text-indigo-800 px-3 py-1 rounded-full text-sm">Додаткові техніки</span>
+                                <span class="bg-pink-200 text-pink-800 px-3 py-1 rounded-full text-sm">Бонус</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="mt-12 text-center scroll-fade">
+                <div class="inline-block bg-gray-100 px-8 py-4 rounded-2xl">
+                    <p class="text-gray-700 mb-2"><i class="fas fa-calendar-alt text-purple-600 mr-2"></i> <strong>Старт:</strong> 19 березня 2026</p>
+                    <p class="text-gray-700 mb-2"><i class="fas fa-clock text-purple-600 mr-2"></i> <strong>Тривалість:</strong> 8 тижнів + бонуси</p>
+                    <p class="text-gray-700"><i class="fas fa-infinity text-purple-600 mr-2"></i> <strong>Доступ:</strong> Безстроковий до всіх матеріалів</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Whom -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Це для тебе, якщо...</h2>
+                <p class="text-xl text-gray-600">
+                    Впізнай себе в цих описах
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-6">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-compass text-purple-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти відчуваєш що маєш інтуїцію, але не знаєш як нею керувати</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-eye text-indigo-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти хочеш розвинути тонке бачення та відчуття енергій</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-search text-purple-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти шукаєш свій сенс та місію в житті</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-heart text-pink-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти хочеш допомагати близьким та рідним</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-hands-helping text-indigo-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти бачиш себе в ролі провідника або цілителя</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-briefcase text-purple-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти шукаєш нову професію або додаткове джерело доходу</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-user-md text-blue-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти вже практикуючий спеціаліст (психолог, коуч, терапевт) і хочеш підсилити свої навички</p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition scroll-fade">
+                    <i class="fas fa-rocket text-pink-600 text-3xl mb-3"></i>
+                    <p class="text-gray-700">Ти готовий/готова до змін та трансформації</p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Results After Course -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4 gradient-text">Результати після курсу</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                    Конкретна трансформація, яку ти отримаєш
+                </p>
+            </div>
+            
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-8 mb-12">
+                    <div class="scroll-fade">
+                        <h3 class="text-3xl font-bold mb-6">Ти будеш вміти:</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Бачити та відчувати енергії навколо себе та в інших людях</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Працювати з енергетичним тілом (своїм та інших)</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Довіряти своїй інтуїції та керувати нею</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Проводити сесії для себе та інших людей</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Діагностувати та коригувати енергетичний стан</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Працювати з чакрами, каналами та аурою</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="scroll-fade">
+                        <h3 class="text-3xl font-bold mb-6">Як зміниться твоє життя:</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Відчуття сенсу та місії у житті</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Впевненість у своїх рішеннях та виборах</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Можливість допомагати іншим та бути провідником</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Новий рівень доходу (для тих, хто обере професійний шлях)</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Глибинне розуміння себе та оточуючих</p>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-star text-white"></i>
+                                </div>
+                                <p class="text-gray-700 text-lg">Спільнота однодумців та підтримка на шляху</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews -->
+    <section id="reviews" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Відгуки наших учнів</h2>
+                <p class="text-xl text-gray-600">
+                    Реальні історії трансформації
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center text-2xl">👩</div>
+                        <div>
+                            <div class="font-bold text-lg">Олена, 34 роки</div>
+                            <div class="text-gray-500 text-sm">Психолог</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Після курсу моя практика психолога вийшла на зовсім інший рівень. Тепер я бачу глибинні причини проблем клієнтів і можу допомагати набагато ефективніше. Дякую Дар'ї за цей дар!"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-indigo-200 rounded-full flex items-center justify-center text-2xl">👨</div>
+                        <div>
+                            <div class="font-bold text-lg">Андрій, 29 років</div>
+                            <div class="text-gray-500 text-sm">IT спеціаліст</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Я скептично ставився до всього цього, але вирішив спробувати. Результат перевершив усі очікування. Знайшов свою місію, почав допомагати людям і зараз це мій основний дохід. Курс змінив моє життя!"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center text-2xl">👩</div>
+                        <div>
+                            <div class="font-bold text-lg">Марія, 41 рік</div>
+                            <div class="text-gray-500 text-sm">Домогосподарка</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Роками шукала себе. Після навчання у Дар'ї зрозуміла свій шлях. Тепер допомагаю людям, маю власний дохід і відчуваю себе на своєму місці. Безмежно вдячна за цю можливість!"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-purple-200 rounded-full flex items-center justify-center text-2xl">👩</div>
+                        <div>
+                            <div class="font-bold text-lg">Тетяна, 27 років</div>
+                            <div class="text-gray-500 text-sm">Масажист</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Підсилила свою практику масажу енергетичними техніками. Клієнти в захваті від результатів! Тепер можу брати вдвічі більше за сесію. Інвестиція в курс окупилась за місяць."
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-indigo-200 rounded-full flex items-center justify-center text-2xl">👨</div>
+                        <div>
+                            <div class="font-bold text-lg">Ігор, 38 років</div>
+                            <div class="text-gray-500 text-sm">Бізнесмен</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Пройшов курс для розвитку інтуїції в бізнесі. Тепер приймаю рішення набагато впевненіше і точніше. Відчуваю людей і ситуації на іншому рівні. Бізнес пішов в гору!"
+                    </p>
+                </div>
+                
+                <div class="bg-white p-6 rounded-2xl shadow-md scroll-fade">
+                    <div class="flex items-center gap-4 mb-4">
+                        <div class="w-16 h-16 bg-pink-200 rounded-full flex items-center justify-center text-2xl">👩</div>
+                        <div>
+                            <div class="font-bold text-lg">Наталія, 45 років</div>
+                            <div class="text-gray-500 text-sm">Вчитель</div>
+                        </div>
+                    </div>
+                    <div class="mb-3 flex gap-1">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700">
+                        "Завжди відчувала, що маю якісь здібності, але не розуміла як з ними працювати. Дар'я відкрила мені очі. Тепер допомагаю не тільки дітям у школі, а й їхнім батькам. Життя наповнилось сенсом!"
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Monetization System -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-5xl mx-auto">
+                <div class="grid md:grid-cols-2 gap-12 items-center">
+                    <div class="scroll-fade">
+                        <h2 class="text-4xl md:text-5xl font-bold mb-6 gradient-text">Готова система для заробітку</h2>
+                        <p class="text-xl text-gray-700 mb-6">
+                            Для тих, хто хоче не тільки розвинути навичку, а й заробляти на ній стабільно та високо
+                        </p>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-purple-600 text-2xl mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-lg mb-1">Перевірена система</div>
+                                    <p class="text-gray-600">Дар'я ділиться системою, яку сама використовує багато років зі стабільним високим доходом</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-purple-600 text-2xl mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-lg mb-1">Учні вже заробляють</div>
+                                    <p class="text-gray-600">Багато учнів успішно застосовують цю систему і мають стабільний дохід від $2000+ на місяць</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-3">
+                                <i class="fas fa-check-circle text-purple-600 text-2xl mt-1"></i>
+                                <div>
+                                    <div class="font-bold text-lg mb-1">Готові рішення</div>
+                                    <p class="text-gray-600">Не потрібно винаходити велосипед — бери готове і працюй. Покрокові інструкції та шаблони</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-gradient-to-br from-purple-50 to-indigo-50 p-8 rounded-3xl scroll-fade">
+                        <h3 class="text-2xl font-bold mb-6">Що входить в систему:</h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-dollar-sign text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Ціноутворення та пакетування послуг</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-users text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Як знайти перших клієнтів</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-comments text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Скрипти спілкування та продажу</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-chart-line text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Стратегія побудови практики</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-bullhorn text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Просування та маркетинг</p>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 gradient-bg rounded-full flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-file-contract text-white text-sm"></i>
+                                </div>
+                                <p class="text-gray-700">Готові шаблони та документи</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing" class="py-20 gradient-bg text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-5">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Обери свій тариф</h2>
+                <p class="text-xl text-purple-100 mb-6">
+                    Спеціальна пропозиція діє до старту • Записуйся зараз зі знижкою
+                </p>
+                <div class="inline-block bg-white bg-opacity-20 backdrop-blur-sm px-6 py-3 rounded-full text-lg font-bold">
+                    <i class="fas fa-calendar-check mr-2"></i>
+                    Старт навчання: 19 березня 2026
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                
+                <!-- Базовий -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-2xl scroll-fade hover:scale-105 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">Базовий</h3>
+                        <p class="text-gray-600">Для початківців</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="text-gray-400 line-through text-xl mb-2">$497</div>
+                        <div class="text-5xl font-bold gradient-text mb-2">$297</div>
+                        <div class="text-green-600 font-bold">Економія $200</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Всі відео-уроки курсу</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>12 живих уроків у Zoom</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Практичні завдання</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Доступ до матеріалів безстроково</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Чат підтримки</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-full font-bold hover:shadow-xl transition">
+                        Обрати тариф
+                    </button>
+                </div>
+                
+                <!-- Професійний (Рекомендований) -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-2xl scroll-fade relative hover:scale-105 transition duration-300 border-4 border-yellow-400">
+                    <div class="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-yellow-400 text-gray-800 px-6 py-2 rounded-full font-bold text-sm">
+                        ⭐ НАЙПОПУЛЯРНІШИЙ
+                    </div>
+                    <div class="text-center mb-6 mt-4">
+                        <h3 class="text-2xl font-bold mb-2">Професійний</h3>
+                        <p class="text-gray-600">Для тих, хто хоче заробляти</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="text-gray-400 line-through text-xl mb-2">$997</div>
+                        <div class="text-5xl font-bold gradient-text mb-2">$597</div>
+                        <div class="text-green-600 font-bold">Економія $400</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span><strong>Все з тарифу "Базовий"</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Система монетизації від Дар'ї</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Групові дзвінки Q&A з Дар'єю</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Готові шаблони та скрипти</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Бонусні модулі (Геометрія + ЕОТ)</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Сертифікат після завершення</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-yellow-400 to-orange-500 text-gray-800 py-4 rounded-full font-bold hover:shadow-xl transition pulse-glow">
+                        Обрати тариф
+                    </button>
+                </div>
+                
+                <!-- VIP -->
+                <div class="bg-white text-gray-800 rounded-3xl p-8 shadow-2xl scroll-fade hover:scale-105 transition duration-300">
+                    <div class="text-center mb-6">
+                        <h3 class="text-2xl font-bold mb-2">VIP</h3>
+                        <p class="text-gray-600">Максимальний результат</p>
+                    </div>
+                    <div class="text-center mb-6">
+                        <div class="text-gray-400 line-through text-xl mb-2">$1997</div>
+                        <div class="text-5xl font-bold gradient-text mb-2">$997</div>
+                        <div class="text-green-600 font-bold">Економія $1000</div>
+                    </div>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span><strong>Все з тарифу "Професійний"</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span><strong>3 індивідуальні сесії з Дар'єю</strong></span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Особиста підтримка в чаті</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Розбір твоїх кейсів</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Пріоритетна підтримка</span>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-check text-purple-600 mt-1"></i>
+                            <span>Доступ до закритої спільноти VIP</span>
+                        </li>
+                    </ul>
+                    <button class="w-full bg-gradient-to-r from-purple-600 to-indigo-600 text-white py-4 rounded-full font-bold hover:shadow-xl transition">
+                        Обрати тариф
+                    </button>
+                </div>
+                
+            </div>
+            
+            <div class="mt-12 text-center scroll-fade">
+                <div class="inline-block bg-white bg-opacity-20 backdrop-blur-sm px-8 py-4 rounded-2xl">
+                    <p class="text-lg mb-2"><i class="fas fa-shield-alt mr-2"></i> <strong>Гарантія повернення коштів 14 днів</strong></p>
+                    <p class="text-purple-100">Якщо курс тобі не підійде — повернемо гроші без питань</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16 scroll-fade">
+                <h2 class="text-4xl md:text-5xl font-bold mb-4">Часті питання</h2>
+                <p class="text-xl text-gray-600">
+                    Знайди відповіді на свої питання
+                </p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto space-y-4">
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Чи потрібен попередній досвід у практиках?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Ні, попередній досвід не потрібен. Курс побудований таким чином, що навіть повний новачок зможе освоїти всі техніки з нуля. Дар'я веде від простого до складного, пояснюючи кожен крок детально.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Скільки часу займає навчання?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Курс розрахований на 8 тижнів інтенсивного навчання. Щотижня відкривається новий модуль з уроками та практиками. В середньому потрібно 3-5 годин на тиждень. Але ти можеш навчатись у своєму темпі — доступ до матеріалів безстроковий.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Як проходять живі уроки у Zoom?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Живі уроки проходять двічі на тиждень (четвер та субота о 11:00 за Києвом) і тривають 2-3 години. Це практичні заняття з Дар'єю, де ви разом працюєте в парах та групах, відпрацьовуєте техніки. Якщо пропустиш урок — він буде доступний в записі.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Чи є зворотній зв'язок від Дар'ї?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Так! На тарифі "Професійний" є групові дзвінки Q&A з Дар'єю, де вона відповідає на питання учнів. На тарифі "VIP" ти отримуєш 3 індивідуальні сесії з Дар'єю та особисту підтримку в чаті. На "Базовому" є підтримка від команди в чаті.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">А якщо я не зможу бути на живих уроках?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Всі живі уроки записуються і залишаються доступними в записі. Ти зможеш переглянути їх у зручний для себе час. Але рекомендуємо бути на живих уроках, щоб отримати максимум користі від практик та енергії групи.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">А якщо в мене не вийде?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Ми впевнені в якості курсу, тому даємо гарантію повернення коштів 14 днів. Якщо ти пройдеш уроки, виконаєш завдання, але зрозумієш що це не твоє — просто напиши нам і ми повернемо гроші без зайвих питань. Але за 4 роки роботи школи таких випадків майже не було — результати відчуває кожен учень.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Чи є розстрочка?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Так, ми пропонуємо розстрочку на 3 та 6 місяців. Деталі уточнюй при оплаті або пиши в Telegram @dawa_wonder. Ми знайдемо зручний для тебе варіант оплати.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Скільки часу буде доступ до матеріалів?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Доступ до всіх матеріалів курсу — безстроковий! Ти зможеш повертатись до уроків і практик будь-коли, навіть через рік після завершення. Всі оновлення курсу також будуть доступні тобі безкоштовно.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Чи можна поєднувати з роботою/навчанням?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Звісно! Живі уроки проходять у зручний час (11:00 за Києвом у четвер та суботу). Якщо не зможеш бути — все доступне в записі. Практики можна виконувати вранці або ввечері. Багато наших учнів навчались паралельно з роботою.</p>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 rounded-2xl overflow-hidden scroll-fade">
+                    <button class="accordion-trigger w-full text-left p-6 flex justify-between items-center hover:bg-gray-100 transition" onclick="toggleAccordion(this)">
+                        <span class="font-bold text-lg">Чи підходить курс для чоловіків?</span>
+                        <i class="fas fa-chevron-down text-purple-600 transition-transform"></i>
+                    </button>
+                    <div class="accordion-content px-6 pb-6">
+                        <p class="text-gray-700">Так! Тонке бачення та робота з енергіями не мають гендеру. У нас багато чоловіків-учнів, які успішно розвивають ці навички. Чоловіки часто досягають навіть кращих результатів завдяки своїй дисципліні та структурному підходу.</p>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Final CTA -->
+    <section class="py-20 gradient-bg text-white relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-20 left-10 w-72 h-72 bg-white rounded-full blur-3xl"></div>
+            <div class="absolute bottom-20 right-10 w-96 h-96 bg-white rounded-full blur-3xl"></div>
+        </div>
+        
+        <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center scroll-fade">
+                <h2 class="text-4xl md:text-6xl font-bold mb-6">
+                    Твоя трансформація починається 19 березня
+                </h2>
+                <p class="text-xl md:text-2xl text-purple-100 mb-8">
+                    Кожен день без тонкого бачення — це день, коли ти не живеш на повну свою силу. Не відкладай своє життя на потім.
+                </p>
+                
+                <div class="bg-white bg-opacity-20 backdrop-blur-sm rounded-3xl p-8 mb-8">
+                    <p class="text-2xl font-bold mb-4">🔥 Місць обмежена кількість</p>
+                    <p class="text-xl mb-4">Щоб забезпечити якість навчання, ми беремо не більше 50 учнів на потік</p>
+                    <div class="text-3xl font-bold">Старт через 35 днів</div>
+                </div>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center mb-8">
+                    <a href="#pricing" class="bg-white text-purple-600 px-10 py-5 rounded-full font-bold text-xl hover:shadow-2xl transition transform hover:scale-105">
+                        Записатись зі знижкою
+                    </a>
+                    <a href="https://t.me/dawa_wonder" class="border-2 border-white text-white px-10 py-5 rounded-full font-bold text-xl hover:bg-white hover:text-purple-600 transition">
+                        <i class="fab fa-telegram mr-2"></i>Задати питання
+                    </a>
+                </div>
+                
+                <div class="text-purple-100">
+                    <p class="text-lg italic">
+                        "Найкращий час посадити дерево був 20 років тому. Другий найкращий час — зараз."
+                    </p>
+                    <p class="mt-4 font-bold">— Дар'я Смірнова</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-300 py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 gradient-bg rounded-full flex items-center justify-center">
+                            <i class="fas fa-om text-white text-xl"></i>
+                        </div>
+                        <div>
+                            <div class="font-bold text-lg text-white">Сандхі-Хілінг</div>
+                            <div class="text-xs">Школа енергопрактики</div>
+                        </div>
+                    </div>
+                    <p class="text-sm">
+                        Допомагаємо людям розкрити свій потенціал через енергетичні практики та тонке бачення.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Контакти</h4>
+                    <div class="space-y-2 text-sm">
+                        <p><i class="fab fa-telegram mr-2 text-purple-400"></i> Telegram: <a href="https://t.me/dawa_wonder" class="hover:text-white transition">@dawa_wonder</a></p>
+                        <p><i class="fas fa-envelope mr-2 text-purple-400"></i> Email: info@sandhi-healing.com</p>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="font-bold text-white mb-4">Соціальні мережі</h4>
+                    <div class="flex gap-4">
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-facebook"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://t.me/dawa_wonder" class="w-10 h-10 bg-gray-800 rounded-full flex items-center justify-center hover:bg-purple-600 transition">
+                            <i class="fab fa-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 text-center text-sm">
+                <p>&copy; 2026 Школа енергопрактики "Сандхі-Хілінг". Всі права захищені.</p>
+                <p class="mt-2">
+                    <a href="#" class="hover:text-white transition">Політика конфіденційності</a>
+                    <span class="mx-2">•</span>
+                    <a href="#" class="hover:text-white transition">Договір-оферта</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <div id="sticky-cta" class="sticky-cta">
+        <a href="#pricing" class="bg-gradient-to-r from-purple-600 to-indigo-600 text-white px-6 py-3 rounded-full font-bold shadow-2xl hover:shadow-3xl transition flex items-center gap-2">
+            <i class="fas fa-fire"></i>
+            <span>Записатись до 19.03</span>
+        </a>
+    </div>
+
+    <script>
+        // Scroll animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.scroll-fade').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Accordion functionality
+        function toggleAccordion(button) {
+            const content = button.nextElementSibling;
+            const icon = button.querySelector('i');
+            const isActive = content.classList.contains('active');
+            
+            // Close all accordions
+            document.querySelectorAll('.accordion-content').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.querySelectorAll('.accordion-trigger i').forEach(item => {
+                item.style.transform = 'rotate(0deg)';
+            });
+            
+            // Open clicked accordion if it was closed
+            if (!isActive) {
+                content.classList.add('active');
+                icon.style.transform = 'rotate(180deg)';
+            }
+        }
+
+        // Sticky CTA
+        let lastScroll = 0;
+        const stickyCta = document.getElementById('sticky-cta');
+        
+        window.addEventListener('scroll', () => {
+            const currentScroll = window.pageYOffset;
+            
+            if (currentScroll > 800) {
+                stickyCta.classList.add('show');
+            } else {
+                stickyCta.classList.remove('show');
+            }
+            
+            lastScroll = currentScroll;
+        });
+
+        // Smooth scroll
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+
+</body>
+</html>
